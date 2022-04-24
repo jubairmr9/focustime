@@ -15,7 +15,7 @@ export const Focus = ({ addSubject }) => {
   const [subject, setSubject] = useState(null);
   // console.log(subject);
 
-  return (  
+  return (
     <View style={styles.container}>
       <View style={styles.inputContainer}>
         <TextInput
@@ -49,7 +49,6 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     padding: spacing.lg,
-    justifyContent: "top",
     flexDirection: "row"
   }
 });

@@ -1,3 +1,4 @@
+import { registerRootComponent } from 'expo';
 import React, { useState } from 'react';
 import {
   Text,
@@ -19,7 +20,7 @@ import { colors } from "./src/utils/colors"
 const App = () => {
   const [currentSubject, setCurrentSubject] = useState();
   const [history, setHistory] = useState([]);
-  
+
   return (
     <SafeAreaView style={styles.container}>
       {
@@ -51,3 +52,5 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+
+registerRootComponent(App);
